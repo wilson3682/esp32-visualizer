@@ -117,7 +117,7 @@ The visualizer is programmed for a **Vertical Serpentine (Zigzag)** matrix forma
 
 ---
 
-## 🔑 License Activation & Pricing
+## 🔑 License Activation & Pricing(Donation)
 
 This software includes a **free 2-minute demo mode** on every boot so you can test your hardware, microphone, and LED connections before purchasing. 
 
