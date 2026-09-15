@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ESP32 Visualizer Web Installer</title>
+  <!-- Load ESP Web Tools component -->
+  <script type="module" src="https://unpkg.com/esp-web-tools@10/dist/web/install-button.js?module"></script>
+  <style>
+    :root {
+      --bg: #0e1117;
+      --card: #161b22;
+      --border: #30363d;
+      --accent: #38bdf8;
+      --text: #f0f6fc;
+      --text-dim: #8b949e;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+    body { background: var(--bg); color: var(--text); padding: 32px 16px; display: flex; justify-content: center; }
+    .container { max-width: 580px; width: 100%; display: flex; flex-direction: column; gap: 20px; }
+
+    header { text-align: center; }
+    h1 { font-size: 1.6rem; color: var(--accent); margin-bottom: 6px; }
+    p.subtitle { font-size: 0.90rem; color: var(--text-dim); }
+
+    .card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 24px; display: flex; flex-direction: column; gap: 16px; }
+    .card-title { font-size: 1.05rem; font-weight: bold; color: var(--accent); }
+
+    ol { padding-left: 20px; font-size: 0.88rem; color: var(--text-dim); line-height: 1.6; }
+    li strong { color: var(--text); }
+
+    .installer-box {
+      background: #0d1117; border: 1px dashed var(--accent); border-radius: 8px;
+      padding: 24px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px;
+    }
+
+    /* Custom style for the ESP Web Tools button */
+    esp-web-install-button {
+      --esp-tools-button-border-radius: 6px;
+      --esp-tools-button-color: #0284c7;
+      --esp-tools-button-text-color: #ffffff;
+    }
+
+    .browser-warning {
+      display: none; background: #7f1d1d; border: 1px solid #ef4444; color: #fca5a5;
+      padding: 12px; border-radius: 6px; font-size: 0.82rem; text-align: center;
+    }
+
+    footer { text-align: center; font-size: 0.78rem; color: var(--text-dim); margin-top: 10px; }
+    footer a { color: var(--accent); text-decoration: none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🎛️ ESP32 Music Visualizer</h1>
+      <p class="subtitle">Official Web Serial Firmware Installer</p>
+    </header>
+
+    <!-- Incompatible Browser Alert -->
+    <div class="browser-warning" id="browserAlert">
+      ⚠️ Web Serial is not supported in this browser. Please use <strong>Google Chrome</strong>, <strong>Microsoft Edge</strong>, or <strong>Opera</strong> on desktop.
+    </div>
+
+    <div class="card">
+      <div class="card-title">Quick Installation Instructions</div>
+      <ol>
+        <li>Connect your <strong>ESP32 board</strong> to this computer using a USB data cable.</li>
+        <li>Click the <strong>Install</strong> button below.</li>
+        <li>Select your ESP32's <strong>COM Port</strong> in the popup window and click <em>Connect</em>.</li>
+        <li>Wait ~60 seconds for the progress bar to reach 100%.</li>
+      </ol>
+
+      <div class="installer-box">
+        <esp-web-install-button manifest="manifest.json"></esp-web-install-button>
+        <span style="font-size: 0.75rem; color: var(--text-dim);">Requires Google Chrome or Microsoft Edge</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">What Happens After Installation?</div>
+      <p style="font-size: 0.84rem; color: var(--text-dim); line-height: 1.5;">
+        Once flashing completes, your board will broadcast an Access Point named <strong>ESP32_VU_METER</strong> (password: <code>password123</code>). Connect your phone or laptop and open <strong>http://192.168.4.1</strong> or <strong>http://vumeter.local</strong> to configure your matrix dimensions, Wi-Fi, and activate your license!
+      </p>
+    </div>
+
+    <footer>
+      Powered by <a href="https://esphome.github.io/esp-web-tools/" target="_blank">ESP Web Tools</a> &bull; FastLED &bull; esp-dsp
+    </footer>
+  </div>
+
+  <script>
+    // Detect Web Serial API support
+    if (!("serial" in navigator)) {
+      document.getElementById("browserAlert").style.display = "block";
+    }
+  </script>
+</body>
+</html>
