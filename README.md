@@ -46,9 +46,44 @@ You can flash this firmware directly from your computer without downloading any 
 
 ---
 
-## 🔌 Hardware Connections
+## 🔌 Hardware Connections & Matrix Layout
 
-### 1. Audio Microphone (INMP441 Digital I2S)
+### 1. Physical Matrix Layout & Orientation
+
+The visualizer is programmed for a **Vertical Serpentine (Zigzag)** matrix format with the data input starting at the **Bottom-Left corner** when looking at the front of the display:
+
+```text
+┌─────────────────────────────────────────────────────────┐
+│              FRONT VIEW OF THE LED MATRIX               │
+├─────────────────────────────────────────────────────────┤
+│                                                         │
+│   (Top-Left)                                            │
+│        ▲   │   ▲   │                                    │
+│        │   │   │   │   ... (Continues across columns)   │
+│        │   ▼   │   ▼                                    │
+│   [LED 0]                                               │
+│ (Bottom-Left)                                           │
+│  DATA IN                                                │
+└─────────────────────────────────────────────────────────┘
+```
+
+* **Physical Origin:** LED 0 is located at the **Bottom-Left** corner (front view).
+* **Column 0 (First Column):** Data travels **Bottom → Up**.
+* **Column 1 (Second Column):** Turns at the top and travels **Top → Down**.
+* **Column 2 (Third Column):** Turns at the bottom and travels **Bottom → Up** (zigzag).
+
+---
+
+### 2. Addressable LED Matrix (WS2812B / WS2811)
+* **VCC & GND:** Connect directly to an external 5V power supply sized appropriately for your LED count. Connect power supply ground to the ESP32 ground.
+* **Data Pins:**
+  * **Single-Pin Mode (Default):** `GPIO 0`
+  * **2-Pin Mode (2× Framerate):** `GPIO 0` (Left half) and `GPIO 4` (Right half)
+  * **4-Pin Mode (4× Framerate):** `GPIO 0`, `GPIO 4`, `GPIO 16`, `GPIO 17`
+
+---
+
+### 3. Audio Microphone (INMP441 Digital I2S)
 | Microphone Pin | Connects to ESP32 | Notes |
 | :--- | :--- | :--- |
 | **VDD** | **3.3V** | Do NOT use 5V |
@@ -58,14 +93,9 @@ You can flash this firmware directly from your computer without downloading any 
 | **SCK** | **GPIO 14** | Serial Clock |
 | **L/R** | **GND** | Sets channel to Left |
 
-### 2. Addressable LED Matrix (WS2812B / WS2811)
-* **VCC & GND:** Connect directly to an external 5V power supply sized appropriately for your LED count. Connect power supply ground to the ESP32 ground.
-* **Data Pins:**
-  * **Single-Pin Mode (Default):** `GPIO 0`
-  * **2-Pin Mode (2× Framerate):** `GPIO 0` (Left half) and `GPIO 4` (Right half)
-  * **4-Pin Mode (4× Framerate):** `GPIO 0`, `GPIO 4`, `GPIO 16`, `GPIO 17`
+---
 
-### 3. Optional IR Remote Receiver (VS1838B / KY-022)
+### 4. Optional IR Remote Receiver (VS1838B / KY-022)
 | Sensor Pin | Connects to ESP32 | Notes |
 | :--- | :--- | :--- |
 | **VCC (+)** | **3.3V** | Power |
