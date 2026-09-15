@@ -84,30 +84,6 @@ No Arduino IDE, Python, or command-line tools required. Connect your ESP32 to yo
 
 ---
 
-## 💻 Manual Compilation (Arduino IDE)
-
-If compiling manually from source rather than using the Web Installer:
-
-1. **Board Settings:**
-   * **Board:** `ESP32 Dev Module` (or equivalent ESP32 board)
-   * **Partition Scheme:** `Minimal SPIFFS (1.9MB APP with OTA)` *(Required)*
-   * **Core Debug Level:** `None`
-2. **Required Libraries (Install via Arduino Library Manager):**
-   * `FastLED` (by Daniel Garcia)
-   * `WebSockets` (by Markus Sattler)
-   * `ArduinoJson` (v6 or v7)
-   * `IRremoteESP8266` *(Optional, set `ENABLE_IR_REMOTE false` if not used)*
-3. **Sketch Files:** Ensure all modular headers are placed in the same folder:
-   * `spectrum_analyzer.ino`
-   * `fonts.h`
-   * `themes.h`
-   * `intro_effects.h`
-   * `spectrum_effects.h`
-   * `webpages.h`
-   * `public_key.h`
-
----
-
 ## 📱 Initial Setup & Navigation
 
 1. Power on the device. On first boot, connect your phone or laptop to the visualizer's Wi-Fi Access Point:
