@@ -134,10 +134,10 @@ Once activated, your visualizer is permanently unlocked—even across reboots, p
 * **Developer / Sales:** *Wilson*
 * **Email:** *[willypeter67@gmail.com]*
 
-* ---
+---
 
 ## 🎥 Video Demonstration
 
-[![Watch the Demo Video](https://img.youtube.com/vi/BLfNkWLkR30/maxresdefault.jpg)]([https://www.youtube.com/watch?v=BLfNkWLkR30])
+Check out the spectrum visualizer in action:
 
-*(Click the image above to watch the visualizer in action)*
+▶️ **[Watch the Hardware Demo Video](https://https://www.youtube.com/watch?v=BLfNkWLkR30)**
