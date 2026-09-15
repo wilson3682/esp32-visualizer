@@ -133,3 +133,11 @@ Once activated, your visualizer is permanently unlocked—even across reboots, p
 ### 📩 Contact for Pricing & License Keys
 * **Developer / Sales:** *Wilson*
 * **Email:** *[willypeter67@gmail.com]*
+
+* ---
+
+## 🎥 Video Demonstration
+
+[![Watch the Demo Video](https://img.youtube.com/vi/BLfNkWLkR30/maxresdefault.jpg)]([https://www.youtube.com/watch?v=BLfNkWLkR30])
+
+*(Click the image above to watch the visualizer in action)*
