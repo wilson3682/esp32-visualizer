@@ -50,27 +50,30 @@ You can flash this firmware directly from your computer without downloading any 
 
 ### 1. Physical Matrix Layout & Orientation
 
-The visualizer is programmed for a **Vertical Serpentine (Zigzag)** matrix format with the data input starting at the **Bottom-Left corner** when looking at the front of the display:
+The visualizer firmware is pre-configured for a **Vertical Serpentine (Zigzag)** format. When viewing the display directly from the **front**:
 
 ```text
-┌─────────────────────────────────────────────────────────┐
-│              FRONT VIEW OF THE LED MATRIX               │
-├─────────────────────────────────────────────────────────┤
-│                                                         │
-│   (Top-Left)                                            │
-│        ▲   │   ▲   │                                    │
-│        │   │   │   │   ... (Continues across columns)   │
-│        │   ▼   │   ▼                                    │
-│   [LED 0]                                               │
-│ (Bottom-Left)                                           │
-│  DATA IN                                                │
-└─────────────────────────────────────────────────────────┘
+┌─────────────────────────────────────────────────────────────┐
+│                 FRONT VIEW OF THE LED MATRIX                │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│   (Top-Left)                                    (Top-Right) │
+│       ▲       │       ▲       │                             │
+│       │       │       │       │   ... (Zigzag continues     │
+│       │       ▼       │       ▼        across all columns)  │
+│                                                             │
+│    [LED 0]                                  (Bottom-Right)  │
+│ (Bottom-Left)                                               │
+│   DATA IN ──►                                               │
+└─────────────────────────────────────────────────────────────┘
 ```
 
-* **Physical Origin:** LED 0 is located at the **Bottom-Left** corner (front view).
-* **Column 0 (First Column):** Data travels **Bottom → Up**.
-* **Column 1 (Second Column):** Turns at the top and travels **Top → Down**.
-* **Column 2 (Third Column):** Turns at the bottom and travels **Bottom → Up** (zigzag).
+* **Physical Origin:** LED 0 must be positioned at the **Bottom-Left corner** when looking at the matrix from the front.
+* **Layout Format:** **Vertical Serpentine (Zigzag)**.
+  * **Column 0 (First Column):** Data travels from **Bottom → Up**.
+  * **Column 1 (Second Column):** Turns at the top and travels from **Top → Down**.
+  * **Column 2 (Third Column):** Turns at the bottom and travels from **Bottom → Up**.
+  * This alternating pattern continues across all columns.
 
 ---
 
