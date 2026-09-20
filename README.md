@@ -131,8 +131,7 @@ The firmware is pre-configured for a **Vertical Serpentine (Zigzag)** layout. Wh
    * **Network Name (SSID):** `ESP32_VU_METER`
    * **Password:** `password123`
 3. Open your browser and navigate to:
-   * **Main Dashboard:** `http://192.168.4.1` or `http://vumeter.local`
-   * **Equalizer Studio:** `http://vumeter.local/eq`
+   * **Main Dashboard:** `http://192.168.4.1` or `http://vumeter.local`   
    * **OTA Firmware Update:** `http://vumeter.local/update`
 4. Go to the **📐 Matrix** tab:
    * Configure your matrix width (columns), height (rows), output pins, and 5V current limit.
