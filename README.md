@@ -40,7 +40,7 @@ You can flash this firmware directly from your web browser without downloading c
   * Program up to 50 automated scenes with custom patterns, themes, backgrounds, bar widths, speeds, and durations.
   * Non-destructive live updates: UI never rebuilds or drops dropdowns during background scene transitions.
 
-* **FastLED 5V Smart Power Management (Current Limiter):**
+* **Smart LED 5V Smart Power Management (Current Limiter):**
   * Configurable from **500 mA (0.5A) to 15,000 mA (15A)** directly from the **Matrix** tab.
   * Dynamically caps total LED power to prevent tripping USB ports or damaging power supplies without distorting colors.
 
