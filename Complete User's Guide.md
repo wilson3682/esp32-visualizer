@@ -7,9 +7,9 @@ Welcome to the comprehensive user manual for the **ESP32 Professional Audio Spec
 ## 📑 Table of Contents
 1. [Global Header & Top Action Bar](#-global-header--top-action-bar)
 2. [Tab 1: 🎨 Visuals](#-tab-1-visuals)
-3. [Tab 2: 🎚️ Acoustics](#-tab-2-acoustics)
+3. [Tab 2: 🔊 Acoustics](#-tab-2-acoustics)
 4. [Tab 3: 🎯 Peaks & Ballistics](#-tab-3-peaks--ballistics)
-5. [Tab 4: 🎛️ Equalizer Studio](#-tab-4-equalizer-studio)
+5. [Tab 4: 🎛 Equalizer Studio](#-tab-4-equalizer-studio)
 6. [Tab 5: 🎬 Master Show](#-tab-5-master-show)
 7. [Tab 6: 🚀 Startup Intro](#-tab-6-startup-intro)
 8. [Tab 7: 📐 Matrix Configuration & Power](#-tab-7-matrix-configuration--power)
@@ -92,7 +92,7 @@ Controls the appearance, rendering patterns, color themes, and ambient backgroun
 
 ---
 
-## 🎚️ Tab 2: Acoustics
+## 🔊 Tab 2: Acoustics
 
 Fine-tunes digital audio reception, sound filtering, and automatic display sleeping.
 
@@ -128,7 +128,7 @@ Customizes the physics and behavior of the floating peak indicator dots.
 
 ---
 
-## 🎛️ Tab 4: Equalizer Studio
+## 🎛 Tab 4: Equalizer Studio
 
 A complete parametric equalizer studio for professional acoustic calibration.
 
