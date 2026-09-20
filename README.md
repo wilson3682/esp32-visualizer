@@ -20,10 +20,7 @@ You can flash this firmware directly from your web browser without downloading c
 
 ## ✨ Features & Capabilities
 
-* **Instant Beat & Transient Snap (`esp-dsp` Hardware FFT):**
-  * Hardware-accelerated assembly Radix-2 FFT computing 512 points in ~100 µs on Core 0.
-  * Real-time 12 kHz sampling with a 128-sample hop size for a blazing **~94 Hz audio refresh rate** with 75% window overlap.
-  * Captures ultra-fast transient hits on kick drums, basslines, snares, and vocals with zero lag.
+* **Instant Beat & Transient Snap:** Professional-grade digital audio pickup via I2S microphone for razor-sharp response to kick drums, basslines, snares, and vocals.
 
 * **Decoupled Dual-Core FreeRTOS Architecture:**
   * **Core 0:** Runs the preemptive audio FFT (Priority 2) and handles all Wi-Fi / WebSockets / HTTP traffic (Priority 1).
