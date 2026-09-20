@@ -4,7 +4,7 @@
 [![Platform](https://img.shields.io/badge/Platform-ESP32%20Hardware-38bdf8?style=for-the-badge)]()
 [![Status](https://img.shields.io/badge/Status-Commercial%20Firmware-green?style=for-the-badge)]()
 
-An ultra-responsive, studio-grade sound-reactive spectrum analyzer and LED music visualizer designed for custom audio setups, karaoke speakers (*loa kéo*), home theaters, and commercial matrix displays.
+An ultra-responsive, studio-grade sound-reactive spectrum analyzer and LED music visualizer designed for custom audio setups, karaoke speakers, home theaters, and commercial matrix displays.
 
 ---
 
