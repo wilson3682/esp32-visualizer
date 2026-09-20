@@ -163,9 +163,9 @@ Once activated, your visualizer is permanently unlocked across all reboots, powe
 ## 🎥 Video Demonstration
 
 Check out the spectrum visualizer in action:
----
+
 ▶️ https://www.youtube.com/watch?v=FW67ffeyo0Y
----
+
 ▶️ https://www.youtube.com/watch?v=BLfNkWLkR30
----
+
 
