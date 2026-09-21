@@ -1,14 +1,3 @@
-## 📑 Table of Contents
-1. [Global Header & Top Action Bar](#-global-header--top-action-bar)
-2. [Tab 1: 🎨 Visuals](#-tab-1-visuals)
-3. [Tab 2: 🔊 Acoustics](#-tab-2-acoustics)
-4. [Tab 3: 🎯 Peaks & Ballistics](#-tab-3-peaks--ballistics)
-5. [Tab 4: 🎛 Equalizer Studio](#-tab-4-equalizer-studio)
-6. [Tab 5: 🎬 Master Show](#-tab-5-master-show)
-7. [Tab 6: 🚀 Startup Intro](#-tab-6-startup-intro)
-8. [Tab 7: 📐 Matrix Configuration & Power](#-tab-7-matrix-configuration--power)
-9. [💡 Quick Tips & Best Practices](#-quick-tips--best-practices)
-
 # 📖 ESP32 Audio Spectrum Visualizer — Complete Web Dashboard Guide
 
 Welcome to the comprehensive user manual for the **ESP32 Professional Audio Spectrum Visualizer** web dashboard. This document details the purpose and behavior of every tab, button, slider, and menu option available in the system.
