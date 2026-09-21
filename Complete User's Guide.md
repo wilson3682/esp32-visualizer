@@ -1,3 +1,14 @@
+## 📑 Table of Contents
+1. [Global Header & Top Action Bar](#-global-header--top-action-bar)
+2. [Tab 1: 🎨 Visuals](#-tab-1-visuals)
+3. [Tab 2: 🔊 Acoustics](#-tab-2-acoustics)
+4. [Tab 3: 🎯 Peaks & Ballistics](#-tab-3-peaks--ballistics)
+5. [Tab 4: 🎛 Equalizer Studio](#-tab-4-equalizer-studio)
+6. [Tab 5: 🎬 Master Show](#-tab-5-master-show)
+7. [Tab 6: 🚀 Startup Intro](#-tab-6-startup-intro)
+8. [Tab 7: 📐 Matrix Configuration & Power](#-tab-7-matrix-configuration--power)
+9. [💡 Quick Tips & Best Practices](#-quick-tips--best-practices)
+
 # 📖 ESP32 Audio Spectrum Visualizer — Complete Web Dashboard Guide
 
 Welcome to the comprehensive user manual for the **ESP32 Professional Audio Spectrum Visualizer** web dashboard. This document details the purpose and behavior of every tab, button, slider, and menu option available in the system.
@@ -12,7 +23,7 @@ Welcome to the comprehensive user manual for the **ESP32 Professional Audio Spec
 5. [Tab 4: 🎛 Equalizer Studio](#-tab-4-equalizer-studio)
 6. [Tab 5: 🎬 Master Show](#-tab-5-master-show)
 7. [Tab 6: 🚀 Startup Intro](#-tab-6-startup-intro)
-8. [Tab 7: 📐 Matrix Configuration & Power](#-tab-7-matrix-configuration--power)
+8. [Tab 7: 📐 Matrix Configuration, Pins & Power](#-tab-7-matrix-configuration-pins--power)
 9. [💡 Quick Tips & Best Practices](#-quick-tips--best-practices)
 
 ---
@@ -49,7 +60,7 @@ Controls the appearance, rendering patterns, color themes, and ambient backgroun
   * *Modern Luxury & Cyber Vibe* (Themes 81–95)
   * *Tri-Zone Frequency Splits (Part 2)* (Themes 96–104)
   * Selecting **"⚡ Auto Cycle All Themes"** (`255`) continuously cycles themes.
-* **Universal Background Layer (23 Ambient Styles):** Renders an ambient backdrop behind the equalizer bars (Modes 0–22). Modes 21 and 22 (*Random Theme Flow* and *Random Static Theme*) automatically shift through different random color themes on a timer. Selecting **"⚡ Auto Cycle Background Themes"** (`255`) cycles through background modes.
+* **Universal Background Layer (23 Ambient Styles):** Renders an ambient backdrop behind the equalizer bars (Modes 0–22). Modes 21 and 22 (*Random Theme Flow Canvas* and *Random Static Theme Canvas*) automatically shift through different random color themes on a timer. Selecting **"⚡ Auto Cycle Background Themes"** (`255`) cycles through background modes.
 * **Number of LEDs per Band (Live Width):** Changes how many physical LED columns make up a single frequency band (1, 2, 3, or 4 LEDs wide). Adjusting this dynamically reconfigures the audio engine between **16 bands** and **32 bands** with automatic centering.
 
 ### 2. Matrix & Background Brightness (100% Decoupled)
@@ -194,9 +205,9 @@ Configures the opening boot sequence, typography, and on-matrix text messages.
 
 ---
 
-## 📐 Tab 7: Matrix Configuration & Power
+## 📐 Tab 7: Matrix Configuration, Pins & Power
 
-Configures hardware panel layout, power management, Wi-Fi networking, and licensing.
+Configures hardware panel layout, custom GPIO pin mapping, power management, Wi-Fi networking, and licensing.
 
 * **Matrix Width (Columns):** Select 16, 32, or 64 columns.
 * **Matrix Height (Rows):** Adjust row height from 8 up to 64 rows.
@@ -205,8 +216,12 @@ Configures hardware panel layout, power management, Wi-Fi networking, and licens
   * *2 Pins (GPIO 0 & 4):* Splits the matrix into left and right halves (2× framerate).
   * *4 Pins (GPIO 0, 4, 16, 17):* Splits the matrix into four quadrants (4× framerate).
 * **Smart LED Power Management (5V Current Limiter):**
-  * Sets the maximum power supply current from **500 mA (0.5A)** up to **15,000 mA (15A)** in 250 mA increments.
+  * Sets the maximum power supply current from **500 mA (0.5A)** up to **15,000 mA (15A)** in 250 mA steps.
   * Dynamically calculates LED power draw per frame to prevent tripping USB ports or overheating power supplies.
+* **Configurable Hardware GPIO Pins:**
+  * Customize individual pin assignments for all **4 LED Strips**, **Microphone I2S Pins** (`WS`, `SD`, `SCK`), and the **IR Remote Sensor Pin** directly from the web dashboard.
+  * *Safe GPIOs:* `0`, `2`, `4`, `5`, `12`, `13`, `14`, `15`, `16`, `17`, `18`, `19`, `21`, `22`, `23`, `25`, `26`, `27`, `32`, `33`.
+  * ❌ *AVOID:* Pins `6–11` (Internal Flash Memory) and Pins `34–39` (Input-Only).
 * **Home Wi-Fi Setup (Station Mode):**
   * *Wi-Fi Connection Mode:* Choose between Access Point Only (`ESP32_VU_METER`) or Connect to Home Wi-Fi (runs AP and Station mode simultaneously).
   * *SSID & Password:* Enter your home network credentials.
@@ -217,7 +232,7 @@ Configures hardware panel layout, power management, Wi-Fi networking, and licens
   * *Activation Key Input:* Paste your cryptographic activation key and click **🔑 Activate Device** to unlock permanently.
 * **Firmware Management:**
   * **Open Firmware OTA Updater:** Direct link to `/update` for flashing pre-compiled `.bin` files wirelessly through your browser.
-* **💾 Save Geometry, Power & Network (Restart ESP32):** Saves matrix dimensions, parallel pin assignments, 5V power limiter, and network credentials to flash, then restarts the ESP32 to reallocate display memory.
+* **💾 Save Geometry, Power, Pins & Network (Restart ESP32):** Saves matrix dimensions, parallel pin assignments, custom GPIO pin mappings, 5V power limiter, and network credentials to flash, then restarts the ESP32 to reallocate display memory.
 
 ---
 
@@ -227,3 +242,4 @@ Configures hardware panel layout, power management, Wi-Fi networking, and licens
 2. **First-Time Audio Setup:** If your bars bounce when the room is silent, go to **Tab 2 (Acoustics)** and raise the **Noise Filter** slightly, or click **🎯 Calibrate Floor** while the room is quiet.
 3. **Running on USB Power:** If powering your matrix from a computer USB port or phone charger, go to **Tab 7 (Matrix)** and set the **Max 5V Current** to **1000 mA (1.0A)** or lower to prevent the port from shutting down.
 4. **Instant Standby:** You can quickly turn the display off by pressing the power button on an IR remote or clicking **Sleep Display** under **Tab 2 (Acoustics)**. The microphone will continue listening and will wake up automatically when music plays if Auto-Standby is enabled.
+
