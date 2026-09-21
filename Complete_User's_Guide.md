@@ -42,7 +42,7 @@ Controls the appearance, rendering patterns, color themes, and ambient backgroun
 * **Color Theme (105 Categorized Options):** Changes the color palette across bars and effects. Divided into organized groups:
   * *Classic & Studio Equalizers* (Themes 0–15)
   * *Neon Cyber & Synthwave* (Themes 16–29)
-  * *Scott Marley Specials* (Themes 30–34)
+  * *SM Default Specials* (Themes 30–34)
   * *Dynamic Flow Palettes* (Themes 35–54)
   * *Vibrant & Atmospheric* (Themes 55–69)
   * *Tri-Zone Frequency Splits (Part 1)* (Themes 70–80)
