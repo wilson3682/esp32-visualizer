@@ -24,7 +24,7 @@ Located at the very top of the dashboard and visible across all tabs:
 * **Header Title & Version Badge:** Displays the project title and active firmware build version (e.g. `ver. 1.1`).
 * **Active Grid Configuration Subtitle:** Displays your active matrix hardware status in real time:
   * Total Columns × Total Rows (e.g. `64×24 Grid`).
-  * FastLED Pin Count (`1-Pin`, `2-Pin`, or `4-Pin`).
+  * Smart LED Pin Count (`1-Pin`, `2-Pin`, or `4-Pin`).
   * Active Frequency Bands (`16 Bands` or `32 Bands`).
   * Active Column Width (`1`, `2`, `3`, or `4 LED/Band`).
 * **Status Bar:** Provides instant feedback whenever a slider is moved, audio is calibrated, or settings are committed to flash.
