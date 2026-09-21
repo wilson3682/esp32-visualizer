@@ -6,7 +6,7 @@
 
 An ultra-responsive, studio-grade sound-reactive spectrum analyzer and LED music visualizer designed for custom audio setups, karaoke speakers, home theaters, and commercial matrix displays.
 
-📖 **[Click Here to read the complete user's guide](https://github.com/wilson3682/esp32-visualizer/Complete_User's_Guide.md)**
+📖 **[Click Here to read the complete user's guide](https://github.com/wilson3682/esp32-visualizer/blob/main/Complete_User's_Guide.md)**
 
 ---
 
