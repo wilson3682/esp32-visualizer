@@ -23,7 +23,7 @@ You can flash this firmware directly from your web browser without downloading c
 * **Instant Beat & Transient Snap:** Professional-grade digital audio pickup via I2S microphone for razor-sharp response to kick drums, basslines, snares, and vocals.
 * **Massive Visuals & Effects Portfolio:**
   * **25 Animation Patterns:** Standard theme bars, center-out bars, edge-to-center bars, inverted waterfalls, swaying orbital pulses, 4-way spectrogram streams, floating bioluminescent bubbles, calibrated 3-zone popcorn cannon, plasma aurora flames, scrolling horizontal wave bars, negative-space silhouette cutouts, and 3/6/9 sweeping volcanic magma calderas.
-  * **105 Curated Color Themes:** Grouped into Classic & Studio EQ, Neon Cyber Synthwave, Scott Marley Specials, Dynamic Flows, Vibrant Atmospheric, Modern Luxury, and Dual Tri-Zone frequency splits.
+  * **105 Curated Color Themes:** Grouped into Classic & Studio EQ, Neon Cyber Synthwave, Dynamic Flows, Vibrant Atmospheric, Modern Luxury, and Dual Tri-Zone frequency splits.
   * **85 Peak Dot Modes:** Solids, dual-tones, alternating sweeps, tri-zone splits, cycles, metallics, pastels, and sparkles with falling gravity or cannon spark projectiles.
   * **18 Color Flow Directions:** Linear (Up, Down, Left, Right), 4-corner diagonals, radial bloom, radial implosion, center-out diamond ripple, 4-corner radials, harmonic wave collision, and single/dual Knight Rider scanners.
 
