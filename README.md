@@ -161,4 +161,6 @@ Once activated, your visualizer is permanently unlocked across all reboots, powe
 
 Check out the spectrum visualizer in action:
 
-[![ESP32 Spectrum Visualizer Demo](https://img.youtube.com/vi/YOUR_VIDEO_ID/maxresdefault.jpg)](https://www.youtube.com/watch?v=YOUR_VIDEO_ID)
+▶️ https://www.youtube.com/watch?v=FW67ffeyo0Y
+
+▶️ https://www.youtube.com/watch?v=BLfNkWLkR30
