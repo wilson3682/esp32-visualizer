@@ -200,11 +200,11 @@ Configures hardware panel layout, power management, Wi-Fi networking, and licens
 
 * **Matrix Width (Columns):** Select 16, 32, or 64 columns.
 * **Matrix Height (Rows):** Adjust row height from 8 up to 64 rows.
-* **FastLED Output Channels (Parallel Pins):**
+* **Smart LED Output Channels (Parallel Pins):**
   * *1 Pin (GPIO 0):* Standard single-line output.
   * *2 Pins (GPIO 0 & 4):* Splits the matrix into left and right halves (2× framerate).
   * *4 Pins (GPIO 0, 4, 16, 17):* Splits the matrix into four quadrants (4× framerate).
-* **FastLED Power Management (5V Current Limiter):**
+* **Smart LED Power Management (5V Current Limiter):**
   * Sets the maximum power supply current from **500 mA (0.5A)** up to **15,000 mA (15A)** in 250 mA increments.
   * Dynamically calculates LED power draw per frame to prevent tripping USB ports or overheating power supplies.
 * **Home Wi-Fi Setup (Station Mode):**
