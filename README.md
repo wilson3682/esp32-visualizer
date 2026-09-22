@@ -155,7 +155,7 @@ Once activated, your visualizer is permanently unlocked across all reboots, powe
 
 ### 📩 Contact for Pricing & License Keys
 * **Developer / Sales:** *Wilson*
-* **Email:** *[willypeter67@gmail.com]*
+* **Email:** *[willpeter67sales@gmail.com]*
 
 ---
 
