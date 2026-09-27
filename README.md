@@ -20,6 +20,24 @@ Flash this firmware directly from your web browser without downloading code, com
 
 ---
 
+## 🔌 Recommended "Plug & Play" Hardware Controller
+
+Don't want to deal with loose breadboards, jumper wires, or soldering level shifters? We recommend this ready-to-run ESP32 addressable LED controller:
+
+🛒 **[View & Order the Tested ESP32 Controller on Amazon](https://www.amazon.com/dp/B0F5B2G6P5?ref=ppx_yo2ov_dt_b_fed_asin_title&th=1)**
+
+### 🛠️ Tested & Verified Out of the Box:
+* **Zero Soldering Required:** Complete with heavy-duty screw terminals for power (`V+`, `GND`) and LED strip/matrix data connections.
+* **Tested Output Pin:** Fully tested, validated, and confirmed to work straight out of the box using **Output IO Pin 16 (`GPIO 16`)**.
+* **Clean 5V Signal:** Integrated logic-level shifting ensures rock-solid signal transmission to WS2812B/WS2811/SK6812 LEDs without data line flickering.
+* **Wide Voltage Support:** Supports common 5V–24V DC input rails to match your LED setup power supply.
+* **Fast Setup:** Simply plug it into your computer via USB, flash the firmware binary using our **[Web Installer](https://wilson3682.github.io/esp32-visualizer/)**, wire your LED data line to **IO 16**, and you are ready to visualize!
+
+> ⚠️ **Power Supply Recommendation:**  
+> For maximum visual performance, rock-solid stability, and zero brownout resets, **a high-quality 5V power supply rated for at least 10 Amps (5V @ 10A / 50W+) is highly recommended**. Addressable LED matrices draw significant current during white flashes and energetic sub-bass transient spikes. An underpowered supply will cause voltage drop, LED discoloration, flickering, or controller reboots.
+
+---
+
 ## ✨ Features & Capabilities
 
 ### 🚀 High-Precision Acoustic Response & Transient Snap
