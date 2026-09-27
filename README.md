@@ -154,12 +154,13 @@ Once activated, your visualizer is permanently unlocked across all reboots, powe
 
 ---
 
-## 🎥 Video Demonstrations
+## 🎥 Video Demonstration
 
-Watch the spectrum visualizer perform across different patterns, themes, and acoustic profiles:
+Check out the spectrum visualizer in action:
 
-▶️ **[Watch Demonstration Video 1](https://youtu.be/FmK1w3P1B5E)**  
-▶️ **[Watch Demonstration Video 2](https://youtu.be/YgVfT6X5O4k)**  
+▶️ https://www.youtube.com/watch?v=FW67ffeyo0Y
+
+▶️ https://www.youtube.com/watch?v=BLfNkWLkR30
 
 ---
 
