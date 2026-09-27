@@ -134,6 +134,66 @@ Don't want to deal with loose breadboards, jumper wires, or soldering level shif
 
 ---
 
+## 🔌 Hardware Connections & Matrix Layout
+
+### 1. Physical Matrix Layout & Orientation
+
+The firmware is pre-configured for a **Vertical Serpentine (Zigzag)** layout. When viewing the display directly from the **front**:
+
+```text
+┌─────────────────────────────────────────────────────────────┐
+│                 FRONT VIEW OF THE LED MATRIX                │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│   (Top-Left)                                    (Top-Right) │
+│       ▲       │       ▲       │                             │
+│       │       │       │       │   ... (Zigzag continues     │
+│       │       ▼       │       ▼        across all columns)  │
+│                                                             │
+│    [LED 0]                                  (Bottom-Right)  │
+│ (Bottom-Left)                                               │
+│   DATA IN ──►                                               │
+└─────────────────────────────────────────────────────────────┘
+```
+
+* **Physical Origin:** LED 0 must be positioned at the **Bottom-Left corner** when viewed from the front.
+* **Layout Format:** **Vertical Serpentine (Zigzag)**.
+  * **Column 0 (First Column):** Data travels from **Bottom → Up**.
+  * **Column 1 (Second Column):** Turns at the top and travels from **Top → Down**.
+  * **Column 2 (Third Column):** Turns at the bottom and travels from **Bottom → Up**.
+  * This alternating pattern continues across all columns.
+
+---
+
+### 2. Addressable LED Matrix (WS2812B / WS2811)
+* **Power (5V & GND):** Connect directly to an external 5V power supply sized for your LED count. Ensure a common ground connection between the power supply and the ESP32.
+* **Data Output Pins:** 
+  * Defaults are assigned to `GPIO 16` (Strip 1), `GPIO 2` (Strip 2), `GPIO-User Select` (Strip 3), and `GPIO-User Select` (Strip 4). 
+  * *Note:* You can change these pins dynamically at any time under the **📐 Matrix** tab in the web dashboard.
+
+---
+
+### 3. Audio Microphone (INMP441 Digital I2S)
+| Microphone Pin | Connects to ESP32 | Notes |
+| :--- | :--- | :--- |
+| **VDD** | **3.3V** | Do NOT connect to 5V |
+| **GND** | **GND** | Common Ground |
+| **SD** | **GPIO 25** | Default Serial Data (Configurable in UI) |
+| **WS** | **GPIO 5** | Default Word Select (Configurable in UI) |
+| **SCK** | **GPIO 21** | Default Clock (Configurable in UI) |
+| **L/R** | **GND** | Left Audio Channel |
+
+---
+
+### 4. Optional IR Remote Receiver (VS1838B / KY-022)
+| Sensor Pin | Connects to ESP32 | Notes |
+| :--- | :--- | :--- |
+| **VCC (+)** | **3.3V** | Power |
+| **GND (-)** | **GND** | Ground |
+| **OUT (S)** | **GPIO 33** | Default Demodulated Signal (Configurable in UI) |
+
+---
+
 ## 📱 Getting Started & First Connection
 
 1. Flash your board using the **[Web Serial Installer](https://wilson3682.github.io/esp32-visualizer/)** or upload the firmware binary via the **`/update`** page.
