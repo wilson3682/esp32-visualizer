@@ -350,11 +350,12 @@ Once activated, your visualizer is permanently unlocked across all reboots, powe
 
 ## 🎥 Video Demonstration
 
-Check out the spectrum visualizer in action on dual-panel and large studio matrix installations:
+Check out the spectrum visualizer in action:
 
-▶️ **[Watch Spectrum Visualizer Demo Part 1 (Color Themes & Bars)](https://github.com/wilson3682/esp32-visualizer)**  
-▶️ **[Watch Spectrum Visualizer Demo Part 2 (Cymatics, Mandalas & Plasma)](https://github.com/wilson3682/esp32-visualizer)**
+▶️ https://www.youtube.com/watch?v=FW67ffeyo0Y
+
+▶️ https://www.youtube.com/watch?v=BLfNkWLkR30
 
 ---
 
-*Professional LED Audio Spectrum Visualizer • Commercial Equalizer Display Appliance Firmware*
+*Professional LED Audio Spectrum Visualizer • Commercial Appliance Firmware*
