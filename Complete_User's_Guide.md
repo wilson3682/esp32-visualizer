@@ -490,4 +490,20 @@ GND ───────────▶ [BIN] Panel 1 [BOUT] ──┬───
 4. **Instant Standby & Relay Sleep:** Press the power button on an IR remote or click the circular **⏻** power button in the web header to enter standby. The display blanks instantly, and the hardware relay cuts mains power to eliminate coil whine and idle energy consumption.
 5. **Switching to Lamp Mode:** When listening to podcasts or relaxing without music, tap **`🛋️ Lamp`** in the header. The display will transition into continuous ambient room lighting using your selected relaxation shader without reacting to room noise.
 6. **Simulated Mobile View on Desktop:** If you are operating the visualizer from a laptop or desktop monitor and prefer the compact single-column app layout with the bottom navigation dock, click **🖥️ PC Mode** in the top bar to switch into **📱 Phone View**.
-```
+
+---
+
+## ⚠️ Health Advisory & Photosensitivity Disclaimer
+
+> **VISUAL SAFETY NOTICE:**  
+> This appliance produces dynamic sound-reactive lighting, high-contrast color transitions, and energetic strobe transients. If you or anyone in your household has a history of photosensitive epilepsy, light-triggered seizures, or severe visual sensitivity, it is strongly advised not to view rapid strobe sequences.
+>
+> If you choose to operate the display, we recommend the following safety practices:
+> * Keep the **Master Matrix Brightness (`☀️`)** set to a moderate, comfortable ambient level.
+> * Avoid high effect speeds, rapid projectile cannon sparks, or intense stroboscopic color sweeps.
+> * Favor smooth, continuous visual engines (such as *Liquid Silk Waves* or *Swaying Orbit*) or engage **Ambient Relaxation Lamp Mode (`🛋️ Lamp`)** for soft, non-reactive mood lighting.
+>
+> **Limitation of Liability:**  
+> This firmware and hardware designs are provided on an "as-is" basis for custom audio displays and recreational visual installations. Users assume all responsibility for operating conditions, environment lighting, and exposure. We assume no liability for any physical reaction, health complication, or hardware damage arising from use.
+
+---
