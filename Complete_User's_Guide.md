@@ -17,7 +17,7 @@ Welcome to the comprehensive user manual for the **Professional Audio Spectrum V
 10. [ℹ️ Appliance Telemetry, Live Diagnostics & Hardware Inspector](#10-appliance-telemetry-live-diagnostics--hardware-inspector)
 11. [📘 Hardware Wiring, Cluster Topology & Relay Guide](#11-hardware-wiring-cluster-topology--relay-guide)
 12. [💡 Quick Tips, Best Practices & Acoustic Setup](#12-quick-tips-best-practices--acoustic-setup)
-13. [💡 Health Advisory & Photosensitivity Disclaimer](#13-health-advisory--photosensitivity-disclaimer)
+13. [⚠️ Health Advisory & Photosensitivity Disclaimer](#13-health-advisory--photosensitivity-disclaimer)
 
 ---
 
@@ -494,7 +494,7 @@ GND ───────────▶ [BIN] Panel 1 [BOUT] ──┬───
 
 ---
 
-## ⚠️ Health Advisory & Photosensitivity Disclaimer
+## 13. Health Advisory & Photosensitivity Disclaimer
 
 > **VISUAL SAFETY NOTICE:**  
 > This appliance produces dynamic sound-reactive lighting, high-contrast color transitions, and energetic strobe transients. If you or anyone in your household has a history of photosensitive epilepsy, light-triggered seizures, or severe visual sensitivity, it is strongly advised not to view rapid strobe sequences.
