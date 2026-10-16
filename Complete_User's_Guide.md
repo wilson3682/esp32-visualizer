@@ -7,9 +7,9 @@ Welcome to the comprehensive user manual for the **Professional Audio Spectrum V
 ## 📑 Table of Contents
 1. [Global Header & Navigation Bar](#1-global-header--navigation-bar)
 2. [Studio Console Layout & Operating Modes (Desktop vs. Mobile View)](#2-studio-console-layout--operating-modes)
-3. [Column 1: 🎨 Color Themes & Flow Dynamics](#3-column-1--color-themes--flow-dynamics)
-4. [Column 2: ✨ Visual Effects & Kinetic Engines](#4-column-2--visual-effects--kinetic-engines)
-5. [Column 3: 🌌 Backdrop, Peak Dots & Live Acoustics](#5-column-3--backdrop-peak-dots--live-acoustics)
+3. [Column 1: 🎨 Color Themes & Flow Dynamics](#3-column-1-color-themes--flow-dynamics)
+4. [Column 2: ✨ Visual Effects & Kinetic Engines](#4-column-2-visual-effects--kinetic-engines)
+5. [Column 3: 🌌 Backdrop, Peak Dots & Live Acoustics](#5-column-3-backdrop-peak-dots--live-acoustics)
 6. [🛋️ Ambient Relaxation Lamp Mode Deep Dive](#6-ambient-relaxation-lamp-mode-deep-dive)
 7. [🎛️ Equalizer Studio & Frequency Tuner (`/eq`)](#7-equalizer-studio--frequency-tuner)
 8. [🎬 Master Show Playlist Sequencer](#8-master-show-playlist-sequencer)
