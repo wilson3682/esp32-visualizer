@@ -325,6 +325,23 @@ The hardware relay cuts AC/DC mains power to external LED power supplies when th
    * Switch to the **📶 Wi-Fi & Device** tab to optionally enter your home Wi-Fi network credentials.
    * Click **💾 Save Configuration & Reboot**.
 
+Here is a cleanly styled, commercial appliance-grade markdown section you can paste directly into your **`README.md`** and **`Complete_User's_Guide.md`**:
+
+---
+
+## ⚠️ Health Advisory & Photosensitivity Disclaimer
+
+> **VISUAL SAFETY NOTICE:**  
+> This appliance produces dynamic sound-reactive lighting, high-contrast color transitions, and energetic strobe transients. If you or anyone in your household has a history of photosensitive epilepsy, light-triggered seizures, or severe visual sensitivity, it is strongly advised not to view rapid strobe sequences.
+>
+> If you choose to operate the display, we recommend the following safety practices:
+> * Keep the **Master Matrix Brightness (`☀️`)** set to a moderate, comfortable ambient level.
+> * Avoid high effect speeds, rapid projectile cannon sparks, or intense stroboscopic color sweeps.
+> * Favor smooth, continuous visual engines (such as *Liquid Silk Waves* or *Swaying Orbit*) or engage **Ambient Relaxation Lamp Mode (`🛋️ Lamp`)** for soft, non-reactive mood lighting.
+>
+> **Limitation of Liability:**  
+> This firmware and hardware designs are provided on an "as-is" basis for custom audio displays and recreational visual installations. Users assume all responsibility for operating conditions, environment lighting, and exposure. We assume no liability for any physical reaction, health complication, or hardware damage arising from use.
+
 ---
 
 ## 🔑 License Activation & Pricing
