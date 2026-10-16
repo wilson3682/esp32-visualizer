@@ -6,6 +6,8 @@
 
 An ultra-responsive, studio-grade sound-reactive spectrum analyzer and LED music visualizer designed for custom audio setups, karaoke speakers, home theaters, and commercial matrix displays.
 
+📖 **[Click Here to read the complete user's guide](https://github.com/wilson3682/esp32-visualizer/blob/main/Complete_User's_Guide.md)**
+
 ---
 
 ## ⚡ Install Firmware in 60 Seconds (Free Web Installer)
@@ -40,9 +42,9 @@ You can flash this firmware directly from your web browser without downloading c
   * Program up to 50 automated scenes with custom patterns, themes, backgrounds, bar widths, speeds, and durations.
   * Non-destructive live updates: UI never rebuilds or drops dropdowns during background scene transitions.
 
-* **Smart LED 5V Power Management (Current Limiter):**
-  * Configurable from **500 mA (0.5A) to 15,000 mA (15A)** directly from the **Matrix** tab.
-  * Dynamically caps total LED power to prevent tripping USB ports or damaging power supplies without distorting colors.
+* **Smart LED 5V Power Management & Configurable GPIO Pins:**
+  * Configurable power limiter from **500 mA (0.5A) to 15,000 mA (15A)** to protect USB ports and power supplies.
+  * **Fully Custom Pin Mapping:** Change GPIO pins for all 4 LED data strips, I2S microphone pins (WS, SD, SCK), and the IR remote receiver directly from the **Matrix** tab without recompiling.
 
 * **Dedicated Parametric Equalizer Studio (`/eq`):**
   * Fine-tune 16 or 32 individual frequency bands with room ambient noise-floor calibration.
@@ -96,10 +98,9 @@ The firmware is pre-configured for a **Vertical Serpentine (Zigzag)** layout. Wh
 
 ### 2. Addressable LED Matrix (WS2812B / WS2811)
 * **Power (5V & GND):** Connect directly to an external 5V power supply sized for your LED count. Ensure a common ground connection between the power supply and the ESP32.
-* **Data Output Pins:**
-  * **1-Pin Mode (Default):** `GPIO 0`
-  * **2-Pin Mode (2× Framerate):** `GPIO 0` (Left half) and `GPIO 4` (Right half)
-  * **4-Pin Mode (4× Framerate):** `GPIO 0`, `GPIO 4`, `GPIO 16`, `GPIO 17`
+* **Data Output Pins:** 
+  * Defaults are assigned to `GPIO 0` (Strip 1), `GPIO 4` (Strip 2), `GPIO 16` (Strip 3), and `GPIO 17` (Strip 4). 
+  * *Note:* You can change these pins dynamically at any time under the **📐 Matrix** tab in the web dashboard.
 
 ---
 
@@ -108,9 +109,9 @@ The firmware is pre-configured for a **Vertical Serpentine (Zigzag)** layout. Wh
 | :--- | :--- | :--- |
 | **VDD** | **3.3V** | Do NOT connect to 5V |
 | **GND** | **GND** | Common Ground |
-| **SD** | **GPIO 32** | Serial Data |
-| **WS** | **GPIO 15** | Word Select Clock |
-| **SCK** | **GPIO 14** | Serial Clock |
+| **SD** | **GPIO 32** | Default Serial Data (Configurable in UI) |
+| **WS** | **GPIO 15** | Default Word Select (Configurable in UI) |
+| **SCK** | **GPIO 14** | Default Clock (Configurable in UI) |
 | **L/R** | **GND** | Left Audio Channel |
 
 ---
@@ -120,7 +121,7 @@ The firmware is pre-configured for a **Vertical Serpentine (Zigzag)** layout. Wh
 | :--- | :--- | :--- |
 | **VCC (+)** | **3.3V** | Power |
 | **GND (-)** | **GND** | Ground |
-| **OUT (S)** | **GPIO 13** | 38 kHz Demodulated Signal |
+| **OUT (S)** | **GPIO 13** | Default Demodulated Signal (Configurable in UI) |
 
 ---
 
@@ -134,9 +135,8 @@ The firmware is pre-configured for a **Vertical Serpentine (Zigzag)** layout. Wh
    * **Main Dashboard:** `http://192.168.4.1` or `http://vumeter.local`   
    * **OTA Firmware Update:** `http://vumeter.local/update`
 4. Go to the **📐 Matrix** tab:
-   * Configure your matrix width (columns), height (rows), output pins, and 5V current limit.
-   * Enter your home Wi-Fi credentials (optional).
-   * Click **💾 Save Geometry, Power & Network (Restart ESP32)**.
+   * Configure your matrix width (columns), height (rows), custom GPIO pins, 5V power limit, and Wi-Fi credentials.
+   * Click **💾 Save Geometry, Power, Pins & Network (Restart ESP32)**.
 
 ---
 
@@ -155,7 +155,8 @@ Once activated, your visualizer is permanently unlocked across all reboots, powe
 
 ### 📩 Contact for Pricing & License Keys
 * **Developer / Sales:** *Wilson*
-* **Email:** *[willypeter67@gmail.com]*
+* **Get your license key:** *[https://willpeter67.gumroad.com/l/tqffir]*
+* **Email:** *[willpeter67sales@gmail.com]*
 
 ---
 
@@ -166,5 +167,3 @@ Check out the spectrum visualizer in action:
 ▶️ https://www.youtube.com/watch?v=FW67ffeyo0Y
 
 ▶️ https://www.youtube.com/watch?v=BLfNkWLkR30
-
-
